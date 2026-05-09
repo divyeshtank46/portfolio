@@ -8,7 +8,7 @@ import { toast } from "sonner";
 
 const EMAILJS_SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
 const EMAILJS_TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
-const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_PUBLIC_KEY;
+const EMAILJS_PUBLIC_KEY = process.env.REACT_APP_PUBLICK_KEY;
 
 const links = [
   {
