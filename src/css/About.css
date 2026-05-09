@@ -1,0 +1,112 @@
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(250px, 310px) minmax(0, 1fr);
+  gap: clamp(1.6rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.avatar-box {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 24px;
+  border: 1px solid rgba(19, 33, 59, 0.14);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(15, 157, 154, 0.28), transparent 58%),
+    radial-gradient(circle at 80% 78%, rgba(240, 90, 50, 0.26), transparent 54%),
+    linear-gradient(180deg, #ffffff 0%, #eef3fb 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+}
+
+.avatar-box::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 18px;
+  border: 1px dashed rgba(19, 33, 59, 0.2);
+}
+
+.avatar-initials {
+  position: relative;
+  z-index: 1;
+  font-size: clamp(3rem, 8vw, 4.3rem);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  color: var(--ink-900);
+}
+
+.about-body p {
+  color: var(--ink-500);
+  margin-top: 0.82rem;
+  font-size: 0.95rem;
+}
+
+.about-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.3rem;
+}
+
+.chip {
+  padding: 0.32rem 0.62rem;
+  border-radius: 999px;
+  border: 1px solid rgba(19, 33, 59, 0.16);
+  background: rgba(255, 255, 255, 0.82);
+  font-size: 0.73rem;
+  color: var(--ink-700);
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.72rem;
+  margin-top: 1.35rem;
+}
+
+.astat {
+  padding: 0.8rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(19, 33, 59, 0.12);
+  background: rgba(255, 255, 255, 0.74);
+}
+
+.astat-n {
+  font-size: 1.24rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--ink-900);
+}
+
+.astat-l {
+  margin-top: 0.2rem;
+  font-size: 0.64rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+}
+
+@media (max-width: 980px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+
+  .avatar-box {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 700px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .astat {
+    padding: 0.72rem;
+  }
+}

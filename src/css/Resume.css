@@ -1,0 +1,82 @@
+.resume-actions {
+  margin-bottom: 1.4rem;
+}
+
+.resume-wrap {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.res-title {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--brand);
+  margin-bottom: 1rem;
+}
+
+.timeline {
+  border: 1px solid rgba(19, 33, 59, 0.13);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.76);
+  padding: 1.05rem 1rem 0.15rem;
+}
+
+.tl-item {
+  position: relative;
+  padding: 0 0 1rem 1rem;
+  margin-bottom: 1rem;
+  border-left: 1px solid rgba(19, 33, 59, 0.2);
+}
+
+.tl-item:last-child {
+  margin-bottom: 0;
+}
+
+.tl-dot {
+  position: absolute;
+  left: -0.36rem;
+  top: 0.2rem;
+  width: 0.68rem;
+  height: 0.68rem;
+  border-radius: 999px;
+  background: var(--accent);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px rgba(15, 157, 154, 0.24);
+}
+
+.tl-date {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin-bottom: 0.25rem;
+}
+
+.tl-role {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 0.15rem;
+}
+
+.tl-place {
+  font-size: 0.82rem;
+  color: var(--ink-700);
+  margin-bottom: 0.4rem;
+}
+
+.tl-desc {
+  font-size: 0.82rem;
+  color: var(--ink-500);
+}
+
+@media (max-width: 980px) {
+  .resume-wrap {
+    grid-template-columns: 1fr;
+  }
+}

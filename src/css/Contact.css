@@ -1,0 +1,140 @@
+.contact-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 1rem;
+}
+
+.contact-info p {
+  color: var(--ink-500);
+  font-size: 0.93rem;
+  margin-bottom: 1rem;
+}
+
+.clinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.56rem;
+}
+
+.clink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  border: 1px solid rgba(19, 33, 59, 0.12);
+  border-radius: var(--radius-md);
+  padding: 0.72rem;
+  background: rgba(255, 255, 255, 0.77);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.clink:hover {
+  transform: translateY(-2px);
+  border-color: rgba(240, 90, 50, 0.42);
+}
+
+.clink-icon {
+  min-width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  border: 1px solid rgba(15, 157, 154, 0.3);
+  background: var(--accent-soft);
+  color: #0f6d6b;
+  font-size: 0.68rem;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clink-lbl {
+  font-size: 0.67rem;
+  font-family: var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-500);
+  margin-bottom: 0.15rem;
+}
+
+.clink-val {
+  font-size: 0.83rem;
+  color: var(--ink-900);
+  word-break: break-word;
+}
+
+.form-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(19, 33, 59, 0.14);
+  background: rgba(255, 255, 255, 0.84);
+  padding: 1rem;
+}
+
+.fg {
+  margin-bottom: 0.8rem;
+}
+
+.fl {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.73rem;
+  font-weight: 600;
+  color: var(--ink-700);
+}
+
+.fi,
+.fta {
+  width: 100%;
+  border: 1px solid rgba(19, 33, 59, 0.2);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--ink-900);
+  font-family: var(--font);
+  font-size: 0.87rem;
+  padding: 0.67rem 0.78rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fi:focus,
+.fta:focus {
+  outline: none;
+  border-color: rgba(15, 157, 154, 0.7);
+  box-shadow: 0 0 0 3px rgba(15, 157, 154, 0.16);
+}
+
+.fta {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.fsubmit {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 0.78rem 0.95rem;
+  background: linear-gradient(135deg, var(--brand), #ff7e3a);
+  color: #fff;
+  font-family: var(--font);
+  font-size: 0.83rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.fsubmit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(240, 90, 50, 0.35);
+}
+
+.fsubmit:disabled {
+  opacity: 0.68;
+  cursor: not-allowed;
+}
+
+@media (max-width: 900px) {
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+}
