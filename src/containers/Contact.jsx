@@ -62,7 +62,7 @@ export default function Contact() {
     const missingConfig = [
       !EMAILJS_SERVICE_ID && "REACT_APP_SERVICE_ID",
       !EMAILJS_TEMPLATE_ID && "REACT_APP_TEMPLATE_ID",
-      !EMAILJS_PUBLIC_KEY && "REACT_APP_PUBLIC_KEY",
+      !EMAILJS_PUBLICK_KEY && "REACT_APP_PUBLICK_KEY",
     ].filter(Boolean);
 
     if (missingConfig.length > 0) {
