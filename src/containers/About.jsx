@@ -2,7 +2,6 @@ import '../css/About.css';
 import "../css/Global.css"
 
 const chips = ['React.js', 'Node.js', 'MongoDB', 'Express.js', 'REST APIs', 'Git', 'Tailwind'];
-const stats = [['15+', 'Projects'], ['2.5+', 'Years Exp'], ['8+', 'Clients']];
 
 export default function About() {
   return (
@@ -12,7 +11,7 @@ export default function About() {
       </div>
 
       <div className="about-body">
-        <div className="sec-eye">// about me</div>
+        <div className="sec-eye"> about me</div>
         <h2 className="sec-h2" style={{ marginBottom: '1.5rem' }}>
           Who I <em>Am</em>
         </h2>
