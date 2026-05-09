@@ -6,11 +6,7 @@ import Projects from "./Projects";
 import Resume from "./Resume";
 import Contact from "./Contact";
 
-const heroStats = [
-  { value: "15+", label: "Projects Shipped" },
-  { value: "2.5Y", label: "Hands-on Build Time" },
-  { value: "24H", label: "Typical Reply Window" },
-];
+
 
 const stackHighlights = [
   "React",
