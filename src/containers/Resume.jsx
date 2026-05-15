@@ -10,7 +10,7 @@ const education = [
     place: "Atmanand Saraswati Science College  - Surat",
   },
   {
-    date: "2018 - 2019",
+    date: "2021 - 2022",
     role: "Higher Secondary School",
     place: "Prerna Vidhyalay -  Surat",
   },
